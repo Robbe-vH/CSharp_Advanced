@@ -1,0 +1,28 @@
+﻿<Window x:Class="Oefening_Klasses_Woordenboek.ZoekWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oefening_Klasses_Woordenboek"
+        mc:Ignorable="d"
+        Title="ZoekWindow" Height="450" Width="400">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Bestand">
+                <MenuItem Header="Zoeken" />
+                <MenuItem Header="Sluiten" />
+                <MenuItem Header="Info" />
+            </MenuItem>
+        </Menu>
+        <StackPanel>
+                        <TextBlock Text="Engels: " Margin="80 10"/>
+            <TextBox Name="TxtEngels" Margin="80 20"/>
+            <TextBlock Text="Nederlands: " Margin="80 10"/>
+            <TextBox Name="TxtNederlands" Margin="80 20"/>
+
+            <Button Name="BtnZoek" Content="Zoeken" Margin="100 20" Click="BtnZoek_Click"/>
+            <Button Name="BtnControle" Content="Controle" Margin="100 20" Click="BtnControle_Click"/>
+
+        </StackPanel>
+    </DockPanel>
+</Window>

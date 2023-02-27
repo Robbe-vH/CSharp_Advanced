@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening_Klasses_Deel_2", "Oefening_Klasses_Deel_2\Oefening_Klasses_Deel_2.csproj", "{EB432749-8457-4131-937D-22B3687FD189}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{2A136A39-379B-4ACC-AB11-029AAA41F3C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB432749-8457-4131-937D-22B3687FD189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB432749-8457-4131-937D-22B3687FD189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB432749-8457-4131-937D-22B3687FD189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB432749-8457-4131-937D-22B3687FD189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A136A39-379B-4ACC-AB11-029AAA41F3C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A136A39-379B-4ACC-AB11-029AAA41F3C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A136A39-379B-4ACC-AB11-029AAA41F3C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A136A39-379B-4ACC-AB11-029AAA41F3C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8BF9E78-B699-4C83-8361-80D7C97EA788}
+	EndGlobalSection
+EndGlobal

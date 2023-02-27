@@ -1,0 +1,13 @@
+﻿<Window x:Class="Oefening_Data_Communiceren.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oefening_Data_Communiceren"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="300">
+    <StackPanel>
+        <TextBox Name="TxtData" Margin="10 20" TextChanged="TxtData_TextChanged"/>
+        <Button Name="BtnGeefDoor" Content="Open Nieuw venster" Margin="10 20" Click="BtnGeefDoor_Click" />
+    </StackPanel>
+</Window>

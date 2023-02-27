@@ -1,0 +1,41 @@
+﻿<Window x:Class="Oefening_Klasses_Deel_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oefening_Klasses_Deel_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Name="Main">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="1*" />
+
+        </Grid.ColumnDefinitions>
+        <Grid Name="BtnGrid" Background="Green" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <Button Name="BtnVolgende" Margin="30" Padding="30" Content="Volgende" VerticalAlignment="Bottom" Click="BtnVolgende_Click"/>
+            <Button Name="BtnVorige" Grid.Row="1" Margin="30" Padding="30" Content="Vorige" VerticalAlignment="Top" Click="BtnVorige_Click"/>
+        </Grid>
+        <DockPanel Name="Artikel" Grid.Column="1">
+            <Grid DockPanel.Dock="Right">
+                <Image Name="ImgArticle" MaxWidth="200"/>
+            </Grid>
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.2*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="0.2*" />
+                </Grid.RowDefinitions>
+                <TextBlock  Name="TxtTitel" Text="Titel Artikel" VerticalAlignment="Center" FontSize="25" Margin="20"/>
+                <TextBox Margin="20" Name="TxtInhoud" Grid.Row="1" Text="Inhoud artikel" IsReadOnly="True" TextWrapping="Wrap"/>
+                <TextBlock Name="TxtNaamJournalist" Grid.Row="2" Text="Naam Journalist" Margin="10 0"/>
+                <TextBlock Name="TxtDatumPublicaties" Grid.Row="2" Text="Datum van publicatie" VerticalAlignment="Center" Margin="10 0"/>
+            </Grid>
+            
+        </DockPanel>
+    </Grid>
+</Window>

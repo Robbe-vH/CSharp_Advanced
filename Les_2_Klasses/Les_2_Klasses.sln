@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les_2_Klasses", "Les_2_Klasses\Les_2_Klasses.csproj", "{B9CA6124-CA60-4E29-A863-C48BA6FA078D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeerClassLibrary", "WeerClassLibrary\WeerClassLibrary.csproj", "{BCE9A69F-D981-4228-A761-8CA427E21481}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9CA6124-CA60-4E29-A863-C48BA6FA078D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9CA6124-CA60-4E29-A863-C48BA6FA078D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9CA6124-CA60-4E29-A863-C48BA6FA078D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9CA6124-CA60-4E29-A863-C48BA6FA078D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE9A69F-D981-4228-A761-8CA427E21481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE9A69F-D981-4228-A761-8CA427E21481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE9A69F-D981-4228-A761-8CA427E21481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE9A69F-D981-4228-A761-8CA427E21481}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {642D6BCC-E9A6-497D-868B-A30BB51F0A8F}
+	EndGlobalSection
+EndGlobal
