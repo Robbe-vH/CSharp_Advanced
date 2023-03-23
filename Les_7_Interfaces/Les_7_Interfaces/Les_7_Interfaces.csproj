@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{307C45E2-29A8-4A8A-8787-BC22D0181F19}</ProjectGuid>
+    <ProjectGuid>{B7C15987-4202-4312-9DEA-6BBAAC0D211A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Oefeningen_Streams</RootNamespace>
-    <AssemblyName>Oefeningen_Streams</AssemblyName>
+    <RootNamespace>Les_7_Interfaces</RootNamespace>
+    <AssemblyName>Les_7_Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Oefening_4.cs" />
-    <Compile Include="Oefening_5.cs" />
-    <Compile Include="Oefening_6.cs" />
+    <Compile Include="BaseHelp.cs" />
+    <Compile Include="Perfect2Help.cs" />
+    <Compile Include="PerfectHelp.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Oefening_2.cs" />
-    <Compile Include="Oefening_1.cs" />
-    <Compile Include="Oefening_3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

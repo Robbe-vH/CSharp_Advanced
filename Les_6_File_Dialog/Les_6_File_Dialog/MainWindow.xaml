@@ -1,0 +1,25 @@
+﻿<Window x:Class="Les_6_File_Dialog.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Les_6_File_Dialog"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock Name="LblTextVanBestand"
+                       Margin="30" />
+            <TextBox Name="Txtinput"
+                     Margin="30" />
+            <Button Name="BtnSave"
+                    Click="BtnSave_Click" 
+                    Margin="200 30" 
+                    Content="Save" />
+            <Button Name="BtnCrash"
+                    Content="Open bestand wat niet bestaat"
+                    Margin="200 30"
+                    Click="BtnCrash_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
