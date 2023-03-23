@@ -1,11 +1,12 @@
 ﻿using System.IO;
+
 namespace Oefeningen_Streams
 {
-    internal class Oefening_2
+    public class Oefening_2
     {
-        private static void Main(string[] args)
+        public static void Wipe(string fileName)
         {
-
+            File.WriteAllText(fileName, string.Empty);
         }
     }
 }

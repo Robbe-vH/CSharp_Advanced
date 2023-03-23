@@ -3,19 +3,21 @@ using System.IO;
 
 namespace Oefeningen_Streams
 {
-    internal class Oefening_1
+    public class Oefening_1
     {
-        private static void Main(string[] args)
+        private static string input = string.Empty;
+        public static void Groet()
         {
             Console.WriteLine("Geef uw naam");
-            string input = Console.ReadLine();
+            input = Console.ReadLine();
 
-            using (StreamWriter streamWriter = new StreamWriter("groet.txt"))
+
+            using (StreamWriter sr = new StreamWriter("groet.txt"))
             {
-                if (System.DateTime.Now.Hour < 12) streamWriter.WriteLine($"Goedemorgen {input}");
-                if (System.DateTime.Now.Hour > 12 && System.DateTime.Now.Hour < 18) streamWriter.WriteLine($"Goedendag {input}");
-                if (System.DateTime.Now.Hour > 18) streamWriter.WriteLine($"Goedenavond {input}");
+                if (DateTime.Now.Hour< 12) sr.WriteLine($"Goedemorgen {input}");
+                if (DateTime.Now.Hour > 12 && DateTime.Now.Hour< 18) sr.WriteLine($"Goedendag {input}");
+                if (DateTime.Now.Hour > 18) sr.WriteLine($"Goedenavond {input}");
             }
-        }
+}
     }
 }
