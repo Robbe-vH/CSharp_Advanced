@@ -16,7 +16,7 @@ namespace SkillSwapClassLibrary
             DataSet festivalDataset = new DataSet("PXLSkillSwap");
 
             // Create a DataTable for Category
-            DataTable categoryTable = new DataTable("Category");
+            DataTable categoryTable = new DataTable("Categories");
             categoryTable.Columns.Add("CategoryId", typeof(int));
             categoryTable.Columns.Add("CategoryName", typeof(string));
             categoryTable.PrimaryKey = new DataColumn[] { categoryTable.Columns[0] };
@@ -56,6 +56,9 @@ namespace SkillSwapClassLibrary
             workshopsTable.Rows.Add(10, "Novel drone applications", 3, "Discover new and innovative uses for drones in various industries", new DateTime(2023, 6, 18, 14, 0, 0), "Building A");
             workshopsTable.Rows.Add(11, "Learn to fly a drone", 3, "Get hands-on experience flying a drone and learn about safety regulations", new DateTime(2023, 6, 19, 10, 0, 0), "Building G");
 
+
+            festivalDataset.Tables.Add(workshopsTable);
+            festivalDataset.Tables.Add(categoryTable);
             return festivalDataset;
         }
     }
