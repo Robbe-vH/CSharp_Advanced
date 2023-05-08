@@ -142,20 +142,28 @@ namespace Oefeningen_LINQ
 
         public List<WareHouse> Oef_3d()
         {
-            List<WareHouse> rankedWarehouses = warehouses.OrderByDescending(
+            return List < WareHouse >  = warehouses.OrderByDescending(
                                w => w.EmployeeSatisfaction.Average()).ToList();
-
-            return rankedWarehouses;
         }
 
         public List<WareHouse> Oef_3e()
         {
-            List<WareHouse> wareHousesGroupedByCityUnder4000 = warehouses.GroupBy(
-                w => w.City.Where(w => w.Postcode < 4000)) 
-
-
+                return new List<WareHouse> = warehouses.Where(
+                w => w.PostCode < 4000).GroupBy(w => w.City);
         }
         
-        public List<WareHouse>
+        public List<String> Oef_3f()
+        {
+            List<String> query = from employee in employees
+                                 join warehouse in warehouses
+                                 on employee.WareHouseID equals warehouse.WareHouseID
+                                 where warehouse.StorageCapacity < 2000
+                                 select $"{employee.FirstName} {employee.FirstName} works at {warehouse.BuildingName} " +
+                                 $"which has {warehouse.StorageCapacity} square meters capacity.";
+
+            return query;
+        }
+
+
     }
 }
